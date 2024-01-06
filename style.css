@@ -1,0 +1,194 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Droid Sans', sans-serif;
+  }
+body{
+    background-color: rgb(22, 21, 21);
+    color: white;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+#main{
+    position: relative;
+    background-color: rgb(36, 34, 35);
+    margin-left:10% ;
+    border-radius: 30px;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10%;
+    width: 80%;
+    padding: 10px 10px 10px 10px;
+}
+#header{
+   
+    justify-content: center;
+    text-align: center;
+
+}
+.p1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+input{
+    height: 40px;
+    width: 40%;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+#but1{
+    font-size: 18px;
+    font-weight:bolder;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+}
+#cardContainer {
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 20px;
+    margin: 5%;
+    justify-content: center;
+  }
+  @media screen and (max-width: 900px) {
+    #cardContainer {
+      grid-template-columns: auto;
+    }
+  }
+ 
+  
+  
+  .weather{
+    
+    height: 275px;
+    width: 400px;
+  background: #7abcff; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+  background: radial-gradient(circle at center, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  
+    border-radius: 10px;
+    top:calc(50% - 125px);
+    left: calc(50% - 200px);
+    border: 3px solid #FFFFFF;
+    padding: 10px 20px;
+  }
+  .weather::after{
+    width: 400px;
+    height: 5px;
+    background: red;
+    position:absolute;
+    top:15px;
+  }
+  .city h1{
+    padding: 0;
+    margin: 5px 0px;
+    text-align: center;
+    font-size: 11pt;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: normal;
+  }
+  .icon{
+    width: 50%;
+    height:auto;
+    float: left;
+    padding: 10px;
+    color: gold;
+    margin: 10px 0;
+    position: relative;
+  }
+  .icon .fa-sun-o{
+    font-size: 88pt;
+    position: absolute;
+    text-shadow: 0 0 20px #fff;
+  }
+  .icon .fa-cloud{
+    font-size: 58pt;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: rgba(255,255,255,0.90);
+  }
+  .icon .fa-cloud + .two{
+    top: 15px;
+    right: 5px;
+    font-size: 48pt;
+    color: #fff;
+  }
+  .temp{
+    width: 50%;
+    float: left;
+    padding: 10px;
+    color: #FFFFFF;
+    margin: 5px 0;
+  }
+  .current{
+    font-size: 68pt;
+    text-align: center;
+    font-weight: lighter;
+  }
+  .clearfix{
+    clear:both;
+    width: 100%;
+    border-top: 3px solid #FFFFFF;
+  
+  }
+  .left,.date,.right{
+    float: left;
+    width: 33%;
+    height: 35px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .left i, .right i{
+    font-size: 38pt;
+    color: #FFFFFF;
+    position: relative;
+    top: -5px;
+  }
+  .date{
+    text-align: center;
+    position: relative;
+    top: -15px;
+    color: #FFFFFF;
+    font-size: 18pt;
+    
+  }
+  .right{
+    text-align: right;
+    
+  }
+  .spin {
+    animation: spin 60s linear infinite,
+      glow 10s linear infinite;
+  }
+  @keyframes spin{
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  .wind{
+    animation: wind 7.5s ease-in-out infinite;
+  }
+  @keyframes wind{
+    50%{
+       top: 30px;
+       right: 15px;
+    }
+  }
+  
+  @keyframes glow{
+    50%{
+       text-shadow: 0 0 5px #fff; 
+    }
+  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherApp</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Droid+Sans">
+</head>
+<body>
+    <div id="main">
+       <div id="header">
+       <p class="p1">Weather Cities App</p>
+       <input type="text"  id="text"placeholder=" Enter city name"/>
+       <button id="but1" onclick="addcard()">ADD</button> 
+       </div>
+       <div id="cardContainer" >
+         
+    
+        <div class="weather" style="display:none;">
+            <div class="city"></div>
+                  <div class="clearfix"></div>
+        
+            <div class="cont">
+              <div class="icon">
+                <i class="fa fa-sun-o spin glow"></i>
+                <i class="fa fa-cloud wind"></i>
+                <i class="fa fa-cloud two"></i>
+              </div>
+              <div class="temp">
+                <div class="current">
+                  &deg;
+                </div>
+                <div class="high">
+                &deg;
+                </div>
+                <div class="low">
+                  &deg;
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="left"><i class="fa fa-angle-left"></i></div>
+              <div class="date"></div>
+              <div class="right"><i class="fa fa-angle-right"></i></div>
+            </div>
+          </div>
+              
+         
+       
+              
+       </div>
+    </div>
+    
+     <script src="./main.js"></script>
+      
+    
+</body>
+</html>
